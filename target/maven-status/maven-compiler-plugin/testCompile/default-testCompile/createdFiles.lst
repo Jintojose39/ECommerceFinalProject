@@ -1,0 +1,10 @@
+EcommerceTestCases\EndFlowEcommerce.class
+EcommerceErrorCheckTestCases\SignInPageErrorMsgValidation.class
+EcommerceTestCases\SignupPageValidation.class
+EcommerceTestCases\Listeners.class
+EcommerceTestCases\ContactPageValidation.class
+EcommerceTestCases\HomePageValidation.class
+EcommerceTestCases\OrderHistoryPageValidation.class
+EcommerceTestCases\CartPageValidation.class
+EcommerceTestCases\ReviewPageValidation.class
+EcommerceTestCases\SignInPageValidation.class

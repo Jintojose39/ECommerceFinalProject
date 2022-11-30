@@ -1,0 +1,10 @@
+EcommercePageobjects\OrderHistoryPage.class
+EcommercePageobjects\ReviewPage.class
+resources\ECBase.class
+EcommercePageobjects\SignUpPage.class
+EcommerceErrorCheckPageObjects\SignInPageErrorMsg.class
+EcommercePageobjects\HomePage.class
+EcommercePageobjects\CartPage.class
+EcommercePageobjects\SignInPage.class
+resources\ExtentReportEcommerce.class
+EcommercePageobjects\ContactPage.class

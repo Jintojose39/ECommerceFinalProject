@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <listeners>
+    <listener class-name="EcommerceTestCases.Listeners"/>
+  </listeners>
+  <test thread-count="5" name="Ecommerce Application All Test Cases(failed)" verbose="0">
+    <classes>
+      <class name="EcommerceTestCases.EndFlowEcommerce">
+        <methods>
+          <include name="OrderHistory"/>
+          <include name="cartCheck"/>
+          <include name="homePage"/>
+          <include name="tearDown"/>
+          <include name="Intialize"/>
+          <include name="signIn"/>
+        </methods>
+      </class> <!-- EcommerceTestCases.EndFlowEcommerce -->
+    </classes>
+  </test> <!-- Ecommerce Application All Test Cases(failed) -->
+</suite> <!-- Failed suite [Suite] -->

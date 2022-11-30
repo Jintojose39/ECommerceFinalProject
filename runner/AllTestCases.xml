@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="EcommerceTestCases.CartPageValidationWithMultipleProducts"/>
+      <class name="EcommerceTestCases.SignupPageValidation"/>
+      <class name="EcommerceErrorCheckTestCases.ContactPageErrorValidation"/>
+      <class name="EcommerceTestCases.CartPageValidation"/>
+      <class name="EcommerceErrorCheckTestCases.SignInPageErrorMsgValidation"/>
+      <class name="EcommerceTestCases.ReviewPageValidation"/>
+      <class name="EcommerceTestCases.ContactPageValidation"/>
+      <class name="EcommerceTestCases.OrderHistoryPageValidation"/>
+      <class name="EcommerceErrorCheckTestCases.SignupPageErrorMessgeValidation1"/>
+      <class name="EcommerceTestCases.SignInPageValidation"/>
+      <class name="EcommerceErrorCheckTestCases.SignupPageErrorMessgeValidation2"/>
+      <class name="EcommerceTestCases.EndFlowEcommerce"/>
+      <class name="EcommerceTestCases.HomePageValidation"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
