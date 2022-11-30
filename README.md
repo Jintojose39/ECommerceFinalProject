@@ -5,6 +5,7 @@ ABOUT:
 The project implemented the end flow of a real-time e-commerce application. This demo of the e-commerce
 application includes all the high-level actions of a real e-commerce application. Here we test this application in
 both manual and automated ways.
+
 STEPS TO BE FOLLOWED:
 
 Manual Testing:
