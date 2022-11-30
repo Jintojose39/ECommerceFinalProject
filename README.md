@@ -1,11 +1,14 @@
 # ECommerceFinalProject
 PROJECT REPORT
 ABOUT:
+
 The project implemented the end flow of a real-time e-commerce application. This demo of the e-commerce
 application includes all the high-level actions of a real e-commerce application. Here we test this application in
 both manual and automated ways.
 STEPS TO BE FOLLOWED:
+
 Manual Testing:
+
 • User requirement of the application analysed.
 • Check the flow of the application.
 • Manual test cases are prepared in the excel sheet with proper test case format.
@@ -14,10 +17,12 @@ Manual Testing:
 were defined for any requirement.
 • Each test case was prepared module-wise.
 TEST STATUS:
+
 Total Test cases : 27
 Passed : 18
 Failed : 9
 Automation Testing:
+
 • Created a maven project with the name ‘EcommerceMasterFinalProject.’
 • Added all dependencies required for the project in the pom file.
 • Created packages related to the project in the main folder and test folder.
@@ -33,6 +38,7 @@ and Smoke).
 • Integrated with Jenkins tool.
 • Project was added in the git hub as a repository
 TOOLS USED:
+
 Automation Testing:
 • Automation tool : Selenium WebDriver 4.4
 • Testing Framework : TestNg 7.6.1
@@ -43,8 +49,10 @@ Automation Testing:
 Manual Testing:
 • MicrosoftExcel
 • MicrosoftWord
+
 PROJECT DURATION : 20 days
 CHALLENGES:
+
 1.Synchronizing Events
 I faced this issue in accept or confirmation option in the application like add to cart module. So I fixed this issues
 with explicit waits but some times script will fail due to this delay.
