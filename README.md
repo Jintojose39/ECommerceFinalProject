@@ -79,7 +79,7 @@ Manual Testing:
 
 PROJECT DURATION : 20 days
 
-CHALLENGES:
+CHALLENGES FACED :
 
 1.Synchronizing Events
 I faced this issue in accept or confirmation option in the application like add to cart module. So I fixed this issues
