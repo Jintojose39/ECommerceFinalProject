@@ -74,6 +74,7 @@ Automation Testing:
 
 Manual Testing:
 • MicrosoftExcel
+
 • MicrosoftWord
 
 PROJECT DURATION : 20 days
