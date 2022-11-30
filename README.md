@@ -12,11 +12,16 @@ STEPS TO BE FOLLOWED:
 Manual Testing:
 
 • User requirement of the application analysed.
+
 • Check the flow of the application.
+
 • Manual test cases are prepared in the excel sheet with proper test case format.
+
 • On the base of manual test cases defect report was created in the excel sheet.
+
 • Traceability matrix was prepared. The traceability process itself is used to review the test cases that
 were defined for any requirement.
+
 • Each test case was prepared module-wise.
 
 TEST STATUS:
@@ -28,28 +33,43 @@ Failed : 9
 Automation Testing:
 
 • Created a maven project with the name ‘EcommerceMasterFinalProject.’
+
 • Added all dependencies required for the project in the pom file.
+
 • Created packages related to the project in the main folder and test folder.
+
 • Added resources package in the main folder for the base class and other files like properties and excel
 file.
+
 • Validation of test cases was created in the test folder and page objects of the test cases are created in
 the main folder.
+
 • Created XML files for the test cases in the TestNg framework.
+
 • Extends report was created with the help of Listeners. So we get screenshots of the failed test cases
 and they will be stored in the Screenshot folder.
+
 • Integrated with maven so, therefore, we can execute the test from the command prompt.(Regression
 and Smoke).
+
 • Integrated with Jenkins tool.
+
 • Project was added in the git hub as a repository
 
 TOOLS USED:
 
 Automation Testing:
+
 • Automation tool : Selenium WebDriver 4.4
+
 • Testing Framework : TestNg 7.6.1
+
 • Programming language : Java
+
 • IDE : Eclipse
+
 • Continues Integration : Jenkins
+
 • Version Control : Git hub
 
 Manual Testing:
