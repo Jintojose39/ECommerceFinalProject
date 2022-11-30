@@ -1,5 +1,6 @@
 # ECommerceFinalProject
 PROJECT REPORT
+
 ABOUT:
 
 The project implemented the end flow of a real-time e-commerce application. This demo of the e-commerce
@@ -21,6 +22,7 @@ TEST STATUS:
 Total Test cases : 27
 Passed : 18
 Failed : 9
+
 Automation Testing:
 
 • Created a maven project with the name ‘EcommerceMasterFinalProject.’
@@ -46,11 +48,13 @@ Automation Testing:
 • IDE : Eclipse
 • Continues Integration : Jenkins
 • Version Control : Git hub
+
 Manual Testing:
 • MicrosoftExcel
 • MicrosoftWord
 
 PROJECT DURATION : 20 days
+
 CHALLENGES:
 
 1.Synchronizing Events
