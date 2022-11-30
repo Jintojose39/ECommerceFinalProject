@@ -47,7 +47,7 @@ the main folder.
 • Created XML files for the test cases in the TestNg framework.
 
 • Extends report was created with the help of Listeners. So we get screenshots of the failed test cases
-and they will be stored in the Screenshot folder.
+and they will be stored in  the Screenshot folder.
 
 • Integrated with maven so, therefore, we can execute the test from the command prompt.(Regression
 and Smoke).
