@@ -17,6 +17,11 @@ Manual Testing:
 were defined for any requirement.
 • Each test case was prepared module-wise.
 
+TEST STATUS:
+Total Test cases : 27
+Passed : 18
+Failed : 9
+
 Automation Testing:
 • Created a maven project with the name ‘EcommerceMasterFinalProject.’
 • Added all dependencies required for the project in the pom file.
@@ -32,10 +37,7 @@ and they will be stored in the Screenshot folder.
 and Smoke).
 • Integrated with Jenkins tool.
 • Project was added in the git hub as a repository
-TEST STATUS:
-Total Test cases : 27
-Passed : 18
-Failed : 9
+
 TOOLS USED:
 
 Automation Testing:
