@@ -1,5 +1,6 @@
 # ECommerceFinalProject
 
+PROJECT REPORT
 
 ABOUT:
 The project implemented the end flow of a real-time e-commerce application. This demo of the e-commerce
