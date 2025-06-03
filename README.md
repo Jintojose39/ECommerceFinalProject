@@ -1,105 +1,153 @@
-# ECommerceFinalProject
-PROJECT REPORT
+# 🛒 E-Commerce Application Testing Framework
 
-ABOUT:
+## 📌 Project Overview
 
-The project implemented the end flow of a real-time e-commerce application. This demo of the e-commerce
-application includes all the high-level actions of a real e-commerce application. Here we test this application in
-both manual and automated ways.
+This project demonstrates end-to-end testing for an **e-commerce web application**, automating various user flows using **Selenium WebDriver** and the **TestNG** framework. The project integrates with **Jenkins** for CI/CD, uses **Log4j** for logging, and generates **ExtentReports** for rich test reporting.
 
-STEPS TO BE FOLLOWED:
+---
 
-Manual Testing:
+## 🗂️ Project Structure
 
-• User requirement of the application analysed.
+EcommerceMasterFinalProject/
+│
+├── .settings/ # Eclipse settings
+├── src/
+│ ├── main/java/ # Page Objects, Base classes, Utils, Listeners
+│ └── test/java/ # Test case implementations
+│
+├── reports/ # ExtentReport outputs
+├── Screenshots/ # Captured screenshots for failed test cases
+├── test-output/ # TestNG default reports
+├── junitreports/ # JUnit style reports
+├── old/, runner/, target/ # Build and old run artifacts
+├── *.properties # Test data and configuration files
+├── *.xml # TestNG XML suite files (EcommerceEndFlow.xml, etc.)
+│
+├── testng.xml # Master TestNG configuration
+├── pom.xml # Maven dependencies and build config
+├── .classpath / .project # Eclipse project configs
+├── geckodriver.exe / msedgedriver.exe # Browser drivers
+├── README.md # Project documentation
 
-• Check the flow of the application.
 
-• Manual test cases are prepared in the excel sheet with proper test case format.
+---
 
-• On the base of manual test cases defect report was created in the excel sheet.
+## 🛠️ Tech Stack
 
-• Traceability matrix was prepared. The traceability process itself is used to review the test cases that
-were defined for any requirement.
+| Category              | Tool/Tech                          |
+|-----------------------|------------------------------------|
+| Programming Language  | Java                               |
+| Automation Tool       | Selenium WebDriver 4.4             |
+| Test Framework        | TestNG 7.6.1                       |
+| Reporting             | ExtentReports + TestNG Reports     |
+| Logging               | Log4j                              |
+| CI/CD Integration     | Jenkins                            |
+| Build Tool            | Maven                              |
+| IDE                   | Eclipse                            |
+| Version Control       | GitHub                             |
+| Manual Testing Docs   | Microsoft Excel, Word              |
 
-• Each test case was prepared module-wise.
+---
 
-TEST STATUS:
+## 🧪 Testing Approach
 
-Total Test cases : 27
-Passed : 18
-Failed : 9
+### ✅ Manual Testing
 
-Automation Testing:
+- Requirements were reviewed and test cases were created in Excel.
+- Defects were logged in a defect sheet.
+- Traceability Matrix created to map requirements to test cases.
+- Total Test Cases: 27  
+  - ✅ Passed: 18  
+  - ❌ Failed: 9
 
-• Created a maven project with the name ‘EcommerceMasterFinalProject.’
+### 🤖 Automation Testing
 
-• Added all dependencies required for the project in the pom file.
+- Structured using **Page Object Model (POM)**.
+- Test validations reside under `src/test/java`.
+- Page classes and utility functions are under `src/main/java`.
+- **TestNG XMLs** control modular test execution:
+  - `EcommerceEndFlow.xml`
+  - `ErrorValidationTestCases.xml`
+  - `HomePageValidation.xml`
+- Logging enabled via **Log4j**.
+- Reports generated via:
+  - **ExtentReports** (HTML)
+  - **TestNG Default Reports**
+  - Screenshots stored under `/Screenshots` for failed tests
+- Browser drivers included (`geckodriver.exe`, `msedgedriver.exe`)
+- Maven integrated (`pom.xml`) for dependency management and CLI execution:
+  
+```bash
+mvn clean test
 
-• Created packages related to the project in the main folder and test folder.
+🔁 Jenkins Integration
+Project is integrated with Jenkins for CI/CD:
 
-• Added resources package in the main folder for the base class and other files like properties and excel
-file.
+Pulls latest code from GitHub
 
-• Validation of test cases was created in the test folder and page objects of the test cases are created in
-the main folder.
+Builds using Maven
 
-• Created XML files for the test cases in the TestNg framework.
+Runs TestNG test suites (via XMLs)
 
-• Extends report was created with the help of Listeners. So we get screenshots of the failed test cases
-and they will be stored in  the Screenshot folder.
+Publishes HTML reports and screenshots
 
-• Integrated with maven so, therefore, we can execute the test from the command prompt.(Regression
-and Smoke).
+Supports Regression and Smoke testing pipelines
 
-• Integrated with Jenkins tool.
 
-• Project was added in the git hub as a repository
+📈 Reporting & Logs
+📄 Extent HTML Report: /reports/ExtentReport.html
 
-TOOLS USED:
+📸 Failed Screenshots: /Screenshots/
 
-Automation Testing:
+🧾 TestNG Reports: /test-output/, emailable-report.html
 
-• Automation tool : Selenium WebDriver 4.4
+📘 Log Files: Custom logs via Log4j saved to /logs/
 
-• Testing Framework : TestNg 7.6.1
 
-• Programming language : Java
+⚠️ Known Challenges
+Synchronization Issues
 
-• IDE : Eclipse
+Used explicit waits, but some failures due to late DOM loads
 
-• Continues Integration : Jenkins
+Cross-browser Compatibility
 
-• Version Control : Git hub
+Firefox rendering issues resolved partially
 
-Manual Testing:
-• MicrosoftExcel
+Dynamic Locators
 
-• MicrosoftWord
+Used XPath and smart locator strategies
 
-PROJECT DURATION : 20 days
+False Positives
 
-CHALLENGES FACED :
+Fixed by tightening assertions and logging
 
-1.Synchronizing Events
-I faced this issue in accept or confirmation option in the application like add to cart module. So I fixed this issues
-with explicit waits but some times script will fail due to this delay.
-Exceptions shown in that time:
-Session time out exception, No such element exception, Element not visible expection
+Driver Issues
 
-2.Configuration problem
-This will mainly occur due to the old version of the drivers .So avoid that condition I used WebdriverManger class
-in the automation script unless the script will be failed. There for we don’t bother about updation of drivers.
+Resolved using WebDriverManager where applicable
 
-3.Cross browser Testing Problem
-This application is not performing well at some browser like firefox .I faces test failures when I test with fire fox
-browser.
+✅ To Run the Project
+Using Maven:
+mvn clean test -DsuiteXmlFile=EcommerceEndFlow.xml
 
-4.Finding of Exact locators
-This challenge was faced when that time interact with dynamic elements because the content will be change.
-That time go for xpath generated by the site .
 
-5.Some times we need negative test results but we get positive result
-I am explained with a test case .I found a bug related to usability in the sign up section .Actually I need fail status,
-But I got pass status for that test case because there is no error in the user name requirement. Error is found
-in the home page alignment .I fixed this issue with putting assert in the script.
+From Jenkins:
+Configure Maven job
+
+Set Git repo
+
+Add build step:
+mvn clean test -DsuiteXmlFile=EcommerceEndFlow.xml
+
+🔗 Repository
+📁 GitHub: https://github.com/your-username/EcommerceMasterFinalProject
+
+📌 Author
+Your Name
+Test Automation Engineer
+Email: jintojose39@gmail.com
+LinkedIn: https://www.linkedin.com/in/jinto-jose-b83701153/
+
+
+---
+
+Let me know if you want this saved as a downloadable `.md` or `.docx` file, or tailored to any team/organization guidelines.
