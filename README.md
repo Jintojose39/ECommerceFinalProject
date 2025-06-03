@@ -9,7 +9,47 @@ This project demonstrates end-to-end testing for an **e-commerce web application
 ## 🗂️ Project Structure
 
 # Project documentation
-<pre> ```plaintext EcommerceMasterFinalProject/ ├── .classpath # Eclipse classpath config ├── .project # Eclipse project config ├── .settings/ # Eclipse settings ├── geckodriver.exe # Firefox driver ├── msedgedriver.exe # Edge driver ├── pom.xml # Maven build configuration ├── README.md # Project documentation ├── reports/ # ExtentReports output ├── Screenshots/ # Screenshots of failed tests ├── test-output/ # Default TestNG reports ├── junitreports/ # JUnit formatted reports ├── runner/ # Test runner-related files ├── old/ # Old backup/test artifacts ├── target/ # Compiled build output ├── src/ │ ├── main/java/ # Page Objects, Base classes, Utils, Listeners │ └── test/java/ # Test case implementations ├── *.properties # Test data and configuration files │ ├── Ecommerce Application All Test Cases.properties │ ├── Ecommerce Application Home Page Checking.properties │ ├── Ecommerce Application Testing.properties │ ├── Ecommerce Error Validation Test Cases.properties │ └── Test.properties ├── *.xml # TestNG suite XML files │ ├── EcommerceEndFlow.xml │ ├── ErrorValidationTestCases.xml │ ├── HomePageValidation.xml │ └── testng.xml # Main TestNG configuration ├── testng-reports/ # TestNG HTML and resource files │ ├── emailable-report.html │ ├── testng-results.xml │ ├── testng-reports.css │ ├── testng-reports.js │ ├── index.html │ ├── classes.html │ ├── groups.html │ ├── methods.html │ ├── methods-alphabetical.html │ ├── methods-not-run.html │ ├── reporter-output.html │ ├── testng.xml.html │ ├── toc.html │ ├── bullet_point.png │ ├── collapseall.gif │ ├── navigator-bullet.png │ ├── failed.png │ ├── passed.png │ ├── skipped.png │ ├── jquery.min.js │ └── jquery-3.6.0.min.js ``` </pre>
+
+EcommerceMasterFinalProject/
+├── .settings/
+├── src/
+│ ├── main/java/
+│ └── test/java/
+├── reports/
+├── Screenshots/
+├── test-output/
+├── junitreports/
+├── old/
+├── runner/
+├── target/
+├── *.properties
+├── *.xml
+├── testng.xml
+├── pom.xml
+├── .classpath
+├── .project
+├── geckodriver.exe
+├── msedgedriver.exe
+├── README.md
+
+
+### Explanation of folders and files:
+
+- `.settings/` — Eclipse settings  
+- `src/main/java/` — Page Objects, base classes, utils, listeners  
+- `src/test/java/` — Test case implementations  
+- `reports/` — ExtentReport outputs  
+- `Screenshots/` — Captured screenshots of failed test cases  
+- `test-output/` — Default TestNG reports  
+- `junitreports/` — JUnit style reports  
+- `old/`, `runner/`, `target/` — Old artifacts, runner files, and build outputs  
+- `*.properties` — Test data and config files  
+- `*.xml` — TestNG XML suite files  
+- `testng.xml` — Master TestNG configuration  
+- `pom.xml` — Maven dependencies and build config  
+- `.classpath`, `.project` — Eclipse project config files  
+- `geckodriver.exe`, `msedgedriver.exe` — Browser driver executables  
+- `README.md` — Project documentation  
 
 
 
