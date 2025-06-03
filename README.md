@@ -8,62 +8,8 @@ This project demonstrates end-to-end testing for an **e-commerce web application
 
 ## 🗂️ Project Structure
 
-EcommerceMasterFinalProject/
-├── .classpath                     # Eclipse classpath config
-├── .project                       # Eclipse project config
-├── .settings/                     # Eclipse settings
-├── geckodriver.exe                # Firefox driver
-├── msedgedriver.exe              # Edge driver
-├── pom.xml                        # Maven build configuration
-├── README.md                      # Project documentation
-
-├── reports/                       # ExtentReports output
-├── Screenshots/                   # Screenshots of failed tests
-├── test-output/                   # Default TestNG reports
-├── junitreports/                  # JUnit formatted reports
-├── runner/                        # Test runner-related files
-├── old/                           # Old backup/test artifacts
-├── target/                        # Compiled build output
-
-├── src/
-│   ├── main/java/                 # Page Objects, Base classes, Utils, Listeners
-│   └── test/java/                 # Test case implementations
-
-├── *.properties                   # Test data and configuration files
-│   ├── Ecommerce Application All Test Cases.properties
-│   ├── Ecommerce Application Home Page Checking.properties
-│   ├── Ecommerce Application Testing.properties
-│   ├── Ecommerce Error Validation Test Cases.properties
-│   └── Test.properties
-
-├── *.xml                          # TestNG suite XML files
-│   ├── EcommerceEndFlow.xml
-│   ├── ErrorValidationTestCases.xml
-│   ├── HomePageValidation.xml
-│   └── testng.xml                 # Main TestNG configuration
-
-├── testng-reports/                # TestNG HTML and resource files
-│   ├── emailable-report.html
-│   ├── testng-results.xml
-│   ├── testng-reports.css
-│   ├── testng-reports.js
-│   ├── index.html
-│   ├── classes.html
-│   ├── groups.html
-│   ├── methods.html
-│   ├── methods-alphabetical.html
-│   ├── methods-not-run.html
-│   ├── reporter-output.html
-│   ├── testng.xml.html
-│   ├── toc.html
-│   ├── bullet_point.png
-│   ├── collapseall.gif
-│   ├── navigator-bullet.png
-│   ├── failed.png
-│   ├── passed.png
-│   ├── skipped.png
-│   ├── jquery.min.js
-│   └── jquery-3.6.0.min.js
+# Project documentation
+<pre> ```plaintext EcommerceMasterFinalProject/ ├── .classpath # Eclipse classpath config ├── .project # Eclipse project config ├── .settings/ # Eclipse settings ├── geckodriver.exe # Firefox driver ├── msedgedriver.exe # Edge driver ├── pom.xml # Maven build configuration ├── README.md # Project documentation ├── reports/ # ExtentReports output ├── Screenshots/ # Screenshots of failed tests ├── test-output/ # Default TestNG reports ├── junitreports/ # JUnit formatted reports ├── runner/ # Test runner-related files ├── old/ # Old backup/test artifacts ├── target/ # Compiled build output ├── src/ │ ├── main/java/ # Page Objects, Base classes, Utils, Listeners │ └── test/java/ # Test case implementations ├── *.properties # Test data and configuration files │ ├── Ecommerce Application All Test Cases.properties │ ├── Ecommerce Application Home Page Checking.properties │ ├── Ecommerce Application Testing.properties │ ├── Ecommerce Error Validation Test Cases.properties │ └── Test.properties ├── *.xml # TestNG suite XML files │ ├── EcommerceEndFlow.xml │ ├── ErrorValidationTestCases.xml │ ├── HomePageValidation.xml │ └── testng.xml # Main TestNG configuration ├── testng-reports/ # TestNG HTML and resource files │ ├── emailable-report.html │ ├── testng-results.xml │ ├── testng-reports.css │ ├── testng-reports.js │ ├── index.html │ ├── classes.html │ ├── groups.html │ ├── methods.html │ ├── methods-alphabetical.html │ ├── methods-not-run.html │ ├── reporter-output.html │ ├── testng.xml.html │ ├── toc.html │ ├── bullet_point.png │ ├── collapseall.gif │ ├── navigator-bullet.png │ ├── failed.png │ ├── passed.png │ ├── skipped.png │ ├── jquery.min.js │ └── jquery-3.6.0.min.js ``` </pre>
 
 
 
